@@ -158,6 +158,7 @@ class XmlToJson:
             json.dump(json_dict, file)
         print("Your File was succesfully parsed")
         print("the name of the parsed file is " + parsed_file_name)
-1
+
+
 if __name__ == "__main__":
     XmlToJson()

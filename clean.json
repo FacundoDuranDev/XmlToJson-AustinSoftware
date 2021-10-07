@@ -1,0 +1,7 @@
+{
+    "Element_Type": element_type,
+    "SeatId": seat_id,
+    "SeatPrice": seat_price,
+    "CabinClass": cabin_class,
+    "Availability": availability
+}

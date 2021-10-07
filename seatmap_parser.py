@@ -51,6 +51,7 @@ class XmlToJson:
                     # TODO: aditional validations
         except FileNotFoundError as error:
             print("The name of the file does not exist")
+
     def flight_parse1(self,root):
         flight = {}
         namespace = self.namespaces['Flight1']
@@ -150,11 +151,13 @@ class XmlToJson:
                 )
             flight[row_num] = seats
         return flight
+
     def write_file(self,json_dict,filename):
         parsed_file_name = filename.split('.')[0] + "_parsed.json"
         with open(parsed_file_name, "w") as file:
             json.dump(json_dict, file)
         print("Your File was succesfully parsed")
         print("the name of the parsed file is " + parsed_file_name)
+1
 if __name__ == "__main__":
     XmlToJson()

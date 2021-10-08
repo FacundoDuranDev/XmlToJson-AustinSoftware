@@ -35,7 +35,7 @@ class XmlToJson:
         except ValueError as e:
             parser.error(str(e))
         if isinstance(dict_,dict):
-            self.write_file(dict,seatmap_file)
+            self.write_file(dict_,seatmap_file)
     def detect_type(self,seatmap_file):
         """
         Detects the type of the seatmap file
